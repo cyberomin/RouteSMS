@@ -1,4 +1,4 @@
-"""A modular API to interact
+"""A modular API for interacting
 with the RouteSMS HTTP API
 """
 import requests
