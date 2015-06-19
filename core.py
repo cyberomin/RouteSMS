@@ -2,6 +2,7 @@
 with the RouteSMS HTTP API
 """
 import requests
+from error import RouteSMSException
 
 
 class RouteSMS(object):
@@ -42,5 +43,5 @@ class RouteSMS(object):
             else:
                 return False
         except requests.ConnectionError:
-            raise Exception("Something bad happened")
+            raise RouteSMSException("Internet connection error", "00")
 
