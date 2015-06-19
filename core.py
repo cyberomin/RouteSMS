@@ -2,6 +2,7 @@
 with the RouteSMS HTTP API
 """
 import requests
+from error import RouteSMSException
 
 
 class RouteSMS(object):
