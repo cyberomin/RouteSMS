@@ -42,5 +42,5 @@ class RouteSMS(object):
             else:
                 return False
         except requests.ConnectionError:
-            raise Exception("Something bad happened")
+            raise RouteSMSException("Internet connection error", "00")
 
